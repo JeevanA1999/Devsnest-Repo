@@ -1,0 +1,42 @@
+h2 {
+    color: rgb(216, 49, 7);
+    padding-left: 48.5%;}
+#sub{
+      color: rgb(216, 49, 7);
+    padding-left: 50.5%;
+    }
+    h3,h4{
+        color:/* cornflowerblue */rgba(221, 79, 13, 0.938);
+        
+    }
+p{
+    color: rgba(10, 10, 2, 0.938);
+}
+ul{
+    color:rgba(10, 10, 2, 0.938); 
+}
+  
+.flex-container {
+    display: flex;
+    background-color: rgb(8, 221, 193);
+    width: 800px;
+    height: 800px;
+    /* border: 1px solid #2d2d2d; */
+    margin-bottom: 12px;
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+  
+.flex-container > div {
+    background-color: #f1f1f1;
+    margin: 1px;
+    padding: 20px;
+    width: 50%;
+    /* font-size: 30px;commenting cntr+c+k */
+  }
+.right-bar{
+      margin: top -500px;
+      float: right;
+      width: 25%;
+      margin-right: 30%;
+  }
