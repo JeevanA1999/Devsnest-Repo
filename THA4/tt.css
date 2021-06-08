@@ -11,6 +11,23 @@ body{
     position: relative;
 
 }
+.dot {
+    height: 12px;
+    width: 12px;
+   margin-top:49.3%;
+   margin-left: 49%;
+    background-color: rgb(0, 0, 0);
+    border-radius: 50%;
+    display: inline-block;
+  }
+.dot{
+    background-color:  solid black;
+    border-radius: 50%;
+    left: 50%;
+    top:50%;
+    border-radius: 50%;
+    display: inline-block;
+}
 .line1 {
     border-bottom: 5px solid black;
     width: 40%;

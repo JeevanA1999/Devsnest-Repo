@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    .dot {
+      height: 400px;
+      width: 400px;
+      /* border: 4px solid #AFEEEE; */
+      background-color: red;
+      border-radius: 100%;
+      display: inline-block;
+    }
+
+    .dot1 {
+      height: 300px;
+      width: 300px;
+      margin-top: 42px;
+      border: 3px solid snow;
+      padding-top: 10px;
+      background-color: white;
+      border-radius: 100%;
+      display: inline-block;
+      box-shadow: inset 0 0 10px #333333;
+      position:relative;
+    } 
+
+    .vl1 {
+      border-bottom: 5px solid black;
+      width: 40%;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform-origin: left center;
+      animation-name: rotate360;
+      animation-duration: 60s;
+      animation-iteration-count:100;
+    }
+
+    @keyframes rotate360 {
+      from {
+        transform: rotate(0deg);
+      }
+
+      to {
+        transform: rotate(360deg);
+      }
+    }
+    .vl2 {
+      border-bottom: 5px solid black;
+      width: 40%;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform-origin: left center;
+      animation-name: rotate360;
+      animation-duration: 60s;
+      animation-iteration-count:100;
+    }
+
+    @keyframes rotate360 {
+      from {
+        transform: rotate(0deg);
+      }
+
+      to {
+        transform: rotate(360deg);
+      }
+    }
+    .vl3 {
+      border-bottom: 5px solid black;
+      width: 40%;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform-origin: left center;
+      animation-name: rotate360;
+      animation-duration: 60s;
+      animation-iteration-count:100;
+    }
+
+    @keyframes rotate360 {
+      from {
+        transform: rotate(0deg);
+      }
+
+      to {
+        transform: rotate(360deg);
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div style="text-align:center">
+    <span class="dot">
+      <span class="dot1">
+        <span class="vl1"></span>
+        <span class="vl2"></span>
+        <span class="vl3"></span>
+      </span>
+    </span>
+
+  </div>
+
+</body>
+
+</html>
