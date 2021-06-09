@@ -5,6 +5,7 @@ body{
 }
 .clock-ring{
     border: 40px solid red;
+  
     border-radius: 100%;
     width: 400px;
     height: 400px;
