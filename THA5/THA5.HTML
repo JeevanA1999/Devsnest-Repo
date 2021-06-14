@@ -1,0 +1,104 @@
+<html>
+<head>
+	<script>
+		//function that display value
+		function dis(val)
+		{
+			document.getElementById("result").value+=val
+		}
+		
+		//function that evaluates the digit and return result
+		function solve()
+		{
+			let x = document.getElementById("result").value
+			let y = eval(x)
+			document.getElementById("result").value = y
+		}
+		
+		//function that clear the display
+		function clr()
+		{
+			document.getElementById("result").value = ""
+		}
+	</script>
+	<!-- for styling -->
+	<style>
+        body{
+            flex: initial;
+            position: fixed;
+            top:20%;
+            left:40%;
+            background-color: lavender;
+        }
+		.title{
+            font-weight: bolder;
+            font-size: larger;
+            font-family:Copperplate, Papyrus, fantasy;
+		margin-bottom: 10px;
+		text-align:center;
+		width: 230px;
+		color:rgb(240, 8, 8);
+		border: solid black 2px;
+        background-color: rgb(165, 235, 235);
+        
+		}
+
+		input[type="button"]
+		{
+            font-family:initial;
+            font-weight: 500;
+		background-color:rgb(14, 149, 212);
+		color: black;
+        border-radius: 50%;
+        box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+		border: solid black 2px;
+		width:100%
+		}
+
+		input[type="res"]
+		{
+            font-weight: bold;
+		background-color:rgba(133, 146, 141, 0.918);
+		border: solid black 2px;
+		width:100%
+		}
+	</style>
+</head>
+<!-- create table -->
+<body>
+    
+	<div class = title >Calculator</div>
+	<table>
+		<tr>
+            <!--  colspan which will taken 3 button spaces as per  the design and clr() function will call clr to clear all value -->
+			<td colspan="3"><input type="res" id="result"/></td>
+			<td><input type="button" value="clear" onclick="clr()"/> </td>
+		</tr>
+		<tr>
+			<!-- create button and assign value to each button and dis("1") will call function dis to display value -->
+			<td><input type="button" value="1" onclick="dis('1')"/> </td>
+			<td><input type="button" value="2" onclick="dis('2')"/> </td>
+			<td><input type="button" value="3" onclick="dis('3')"/> </td>
+			<td><input type="button" value="/" onclick="dis('/')"/> </td>
+		</tr>
+		<tr>
+			<td><input type="button" value="4" onclick="dis('4')"/> </td>
+			<td><input type="button" value="5" onclick="dis('5')"/> </td>
+			<td><input type="button" value="6" onclick="dis('6')"/> </td>
+			<td><input type="button" value="-" onclick="dis('-')"/> </td>
+		</tr>
+		<tr>
+			<td><input type="button" value="7" onclick="dis('7')"/> </td>
+			<td><input type="button" value="8" onclick="dis('8')"/> </td>
+			<td><input type="button" value="9" onclick="dis('9')"/> </td>
+			<td><input type="button" value="+" onclick="dis('+')"/> </td>
+		</tr>
+		<tr>
+			<td><input type="button" value="." onclick="dis('.')"/> </td>
+			<td><input type="button" value="0" onclick="dis('0')"/> </td>
+			<td><input type="button" value="=" onclick="solve()"/> </td>
+			<td><input type="button" value="*" onclick="dis('*')"/> </td>
+		</tr>
+	</table>
+</body>
+</html>
